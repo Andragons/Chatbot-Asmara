@@ -1,0 +1,292 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Halo",
+                "Apa kabar",
+                "Ada orang disana?",
+                "Hei",
+                "Woy",
+                "Kuy",
+                "Salam"
+            ],
+            "responses": [
+                "Halo, terima kasih telah bertanya",
+                "Senang bertemu kamu",
+                "Ada yang bisa saya bantu kawan?",
+                "Hai, ada perlu apa?",
+                "Yoi...."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "salam",
+            "patterns": [
+                "Assalamualaikum"
+            ],
+            "responses": [
+                "Waalaikumsalam"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "Sampai Jumpa",
+                "Selamat Tinggal",
+                "Dadah",
+                "Dahh"
+            ],
+            "responses": [
+                "Sampai jumpa lagi",
+                "Semoga harimu menyenangkan",
+                "Dadah! Kembali lagi yaa.....",
+                "Senang berbincang dengan anda....",
+                "Selamat menikmati harimu..."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Terima kasih",
+                "Makasih",
+                "Thanks",
+                "Terima Kasih Banyak",
+                "Terima kasih telah membantu saya"
+            ],
+            "responses": [
+                "Dengan senang hati",
+                "Kapan saja saya siap membantu",
+                "Sudah menjadi tugas saya",
+                "Anda puas, saya juga puas"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Maaf, saya tidak mengerti yang anda maksud",
+                "Mohon untuk lebih spesifik lagi",
+                "Saya tidak yakin bahwa saya mengerti"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "Bisakah kamu membantuku?",
+                "Apa yang bisa kamu lakukan?",
+                "Apa yang kamu tawarkan?",
+                "Bagaimana kamu sangat membantu?",
+                "Kamu bisa bantu aku?"
+            ],
+            "responses": [
+                "Saya bisa membantu anda dalam hal percintaan, romansa, pendekatan, dan mungkin juga memberi sedikit saran akan cinta :)",
+                "Saya menawarkan tentang bantuan di bidang asmara dan cinta bagi anda yang sedang masa lajang"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "simi",
+            "patterns": [],
+            "url": "https://api.simsimi.net/v2/?text={patterns}&lc=id",
+            "responses": [
+                "https://api.simsimi.net/v2/?text={patterns}&lc=id"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "tips",
+            "patterns": [
+                "kasih aku tips dan trik dong",
+                "kasih aku saran dong",
+                "kasih saya saran dong",
+                "berikan saya saran",
+                "saran untuk saya",
+                "tips untuk saya"
+            ],
+            "responses": [
+                "Mau dikasih tips tentang apa nihh..? \n 1. bagaimana cara menjadi lelaki sejati \n 2. trik jitu mendekati wanita \n 3. berpenampilan yang baik dan menawan \n 4. bagaimana cara menjadi goodlooking",
+                "Mau dikasih saran tentang apa nihh..? \n 1. bagaimana cara menjadi lelaki sejati \n 2. trik jitu mendekati wanita \n 3. berpenampilan yang baik dan menawan \n 4. bagaimana cara menjadi goodlooking"
+            ],
+            "context": [
+                "lelaki_sejati",
+                "mendekati_wanita",
+                "berpenampilan",
+                "goodlooking"
+            ]
+        },
+        {
+            "tag": "lelaki_sejati",
+            "patterns": [
+                "bagaimana cara menjadi lelaki yang sejati",
+                "Bagaimana cara menjadi lelaki yang sejati",
+                "lelaki yang sejati"
+            ],
+            "responses": [
+                "1. Punya prinsip \n 2. Sopan pada wanita \n 3. Punya impian \n 4. Rendah hati dan ramah \n 5. Percaya diri \n 6. Tidak licik \n 7. Tahu prioritas \n 8. Berani akui kesalahan"
+            ],
+            "context": [
+                "punya_prinsip",
+                "sopan",
+                "punya_impian",
+                "rendah_hati",
+                "percaya_diri",
+                "tidak_licik",
+                "prioritas",
+                "akui_kesalahan"
+            ]
+        },
+        {
+            "tag": "punya_prinsip",
+            "patterns": [
+                "punya prinsip",
+                "punya prinsip itu apa ?"
+            ],
+            "responses": [
+                "Pria sejati memiliki prinsip dalam hidupnya. Kemudian ia pun menciptakan beberapa aturan untuk menjalankan prinsip tersebut."
+            ],
+            "context": []
+        },
+        {
+            "tag": "sopan",
+            "patterns": [
+                "sopan",
+                "Sopan pada wanita"
+            ],
+            "responses": [
+                "Pria sejati tahu bagaimana cara memperlakukan seorang wanita. Ia selalu memperlakukan istri atau kekasihnya dengan penuh kasih sayang."
+            ],
+            "context": []
+        },
+        {
+            "tag": "punya_impian",
+            "patterns": [
+                "3. Punya impian",
+                "Punya impian"
+            ],
+            "responses": [
+                "Pria sejati rela bekerja keras demi menggapai impiannya. Sembari fokus mengejar mimpi, ia tak pernah lupa pada orang-orang yang dicintainya. Ia akan senantiasa meluangkan waktu untuk orang-orang yang mencintainya."
+            ],
+            "context": []
+        },
+        {
+            "tag": "punya_impian",
+            "patterns": [
+                "3. Punya impian",
+                "Punya impian"
+            ],
+            "responses": [
+                "Pria sejati rela bekerja keras demi menggapai impiannya. Sembari fokus mengejar mimpi, ia tak pernah lupa pada orang-orang yang dicintainya. Ia akan senantiasa meluangkan waktu untuk orang-orang yang mencintainya."
+            ],
+            "context": []
+        },
+        {
+            "tag": "blood_pressure_search",
+            "patterns": [
+                "Saya ingin mencari riwayat hasil tekanan darah",
+                "Tekanan darah untuk pasien",
+                "Muat hasil tekanan darah pasien",
+                "Tampilkan hasil tekanan darah untuk pasien",
+                "Temukan hasil tekanan darah dengan ID"
+            ],
+            "responses": [
+                "Tolong berikan ID Pasien",
+                "ID Pasien?"
+            ],
+            "context": [
+                "search_blood_pressure_by_patient_id"
+            ]
+        },
+        {
+            "tag": "search_blood_pressure_by_patient_id",
+            "patterns": [],
+            "responses": [
+                "Memuat Hasil Tekanan Darah untuk Pasien"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "pharmacy_search",
+            "patterns": [
+                "Carikan aku apotek",
+                "Temukan apotek",
+                "Daftar apotek terdekat",
+                "Cari apotek",
+                "Cari apotek"
+            ],
+            "responses": [
+                "Tolong berikan nama apotek"
+            ],
+            "context": [
+                "search_pharmacy_by_name"
+            ]
+        },
+        {
+            "tag": "search_pharmacy_by_name",
+            "patterns": [],
+            "responses": [
+                "Memuat detail apotek"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "hospital_search",
+            "patterns": [
+                "Cari rumah sakit",
+                "Mencari Rumah Sakit untuk Memindahkan Pasien",
+                "Saya ingin mencari data rumah sakit",
+                "Pencarian rumah sakit untuk pasien",
+                "Mencari detail rumah sakit"
+            ],
+            "responses": [
+                "Harap berikan nama atau lokasi rumah sakit"
+            ],
+            "context": [
+                "search_hospital_by_params"
+            ]
+        },
+        {
+            "tag": "search_hospital_by_params",
+            "patterns": [],
+            "responses": [
+                "Tolong berikan jenis rumah sakit"
+            ],
+            "context": [
+                "search_hospital_by_type"
+            ]
+        },
+        {
+            "tag": "search_hospital_by_type",
+            "patterns": [],
+            "responses": [
+                "Memuat detail rumah sakit"
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}

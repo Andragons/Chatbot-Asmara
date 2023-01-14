@@ -1,0 +1,711 @@
+{
+     "intents": [
+          {
+               "tag": "greeting",
+               "patterns": [
+                    "Halo",
+                    "Apa kabar",
+                    "Ada orang disana?",
+                    "Hei",
+                    "Woy",
+                    "Kuy",
+                    "Salam"
+               ],
+               "responses": [
+                    "Halo, terima kasih telah bertanya",
+                    "Senang bertemu kamu",
+                    "Ada yang bisa saya bantu kawan?",
+                    "Hai, ada perlu apa?",
+                    "Yoi...."
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "salam",
+               "patterns": [
+                    "Assalamualaikum"
+               ],
+               "responses": [
+                    "Waalaikumsalam"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "goodbye",
+               "patterns": [
+                    "Bye",
+                    "Sampai Jumpa",
+                    "Selamat Tinggal",
+                    "Dadah",
+                    "Dahh"
+               ],
+               "responses": [
+                    "Sampai jumpa lagi",
+                    "Semoga harimu menyenangkan",
+                    "Dadah! Kembali lagi yaa.....",
+                    "Senang berbincang dengan anda....",
+                    "Selamat menikmati harimu..."
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "thanks",
+               "patterns": [
+                    "Terima kasih",
+                    "Makasih",
+                    "Thanks",
+                    "Terima Kasih Banyak",
+                    "Terima kasih telah membantu saya"
+               ],
+               "responses": [
+                    "Dengan senang hati",
+                    "Kapan saja saya siap membantu",
+                    "Sudah menjadi tugas saya",
+                    "Anda puas, saya juga puas"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "noanswer",
+               "patterns": [],
+               "responses": [
+                    "Maaf, saya tidak mengerti yang anda maksud",
+                    "Mohon untuk lebih spesifik lagi",
+                    "Saya tidak yakin bahwa saya mengerti"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "options",
+               "patterns": [
+                    "Bisakah kamu membantuku?",
+                    "Apa yang bisa kamu lakukan?",
+                    "Apa yang kamu tawarkan?",
+                    "Bagaimana kamu sangat membantu?",
+                    "Kamu bisa bantu aku?"
+               ],
+               "responses": [
+                    "Saya bisa membantu anda dalam hal percintaan, romansa, pendekatan, dan mungkin juga memberi sedikit saran akan cinta :)",
+                    "Saya menawarkan tentang bantuan di bidang asmara dan cinta bagi anda yang sedang masa lajang"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "simi",
+               "patterns": [],
+               "url": "https://api.simsimi.net/v2/?text={patterns}&lc=id",
+               "responses": [
+                    "https://api.simsimi.net/v2/?text={patterns}&lc=id"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "tips",
+               "patterns": [
+                    "kasih aku tips dan trik dong",
+                    "kasih aku saran dong",
+                    "kasih saya saran dong",
+                    "berikan saya saran",
+                    "saran untuk saya",
+                    "tips untuk saya"
+               ],
+               "responses": [
+                    "Mau dikasih tips tentang apa nihh..? \n 1. bagaimana cara menjadi lelaki sejati \n 2. trik jitu mendekati wanita \n 3. berpenampilan yang baik dan menawan \n 4. bagaimana cara menjadi goodlooking",
+                    "Mau dikasih saran tentang apa nihh..? \n 1. bagaimana cara menjadi lelaki sejati \n 2. trik jitu mendekati wanita \n 3. berpenampilan yang baik dan menawan \n 4. bagaimana cara menjadi goodlooking"
+               ],
+               "context": [
+                    "lelaki_sejati",
+                    "mendekati_wanita",
+                    "berpenampilan",
+                    "goodlooking"
+               ]
+          },
+          {
+               "tag": "lelaki_sejati",
+               "patterns": [
+                    "bagaimana cara menjadi lelaki yang sejati",
+                    "Bagaimana cara menjadi lelaki yang sejati",
+                    "lelaki yang sejati"
+               ],
+               "responses": [
+                    "1. Punya prinsip \n 2. Sopan pada wanita \n 3. Punya impian \n 4. Rendah hati dan ramah \n 5. Percaya diri \n 6. Tidak licik \n 7. Tahu prioritas \n 8. Berani akui kesalahan"
+               ],
+               "context": [
+                    "punya_prinsip",
+                    "sopan",
+                    "punya_impian",
+                    "rendah_hati",
+                    "percaya_diri",
+                    "tidak_licik",
+                    "prioritas",
+                    "akui_kesalahan"
+               ]
+          },
+          {
+               "tag": "punya_prinsip",
+               "patterns": [
+                    "punya prinsip",
+                    "punya prinsip itu apa ?"
+               ],
+               "responses": [
+                    "Pria sejati memiliki prinsip dalam hidupnya. Kemudian ia pun menciptakan beberapa aturan untuk menjalankan prinsip tersebut."
+               ],
+               "context": []
+          },
+          {
+               "tag": "sopan",
+               "patterns": [
+                    "sopan",
+                    "Sopan pada wanita"
+               ],
+               "responses": [
+                    "Pria sejati tahu bagaimana cara memperlakukan seorang wanita. Ia selalu memperlakukan istri atau kekasihnya dengan penuh kasih sayang."
+               ],
+               "context": []
+          },
+          {
+               "tag": "punya_impian",
+               "patterns": [
+                    "3. Punya impian",
+                    "Punya impian"
+               ],
+               "responses": [
+                    "Pria sejati rela bekerja keras demi menggapai impiannya. Sembari fokus mengejar mimpi, ia tak pernah lupa pada orang-orang yang dicintainya. Ia akan senantiasa meluangkan waktu untuk orang-orang yang mencintainya."
+               ],
+               "context": []
+          },
+          {
+               "tag": "rendah_hati",
+               "patterns": [
+                    "4. Rendah hati dan ramah",
+                    "Rendah hati dan ramah",
+                    "Rendah hati",
+                    "ramah"
+               ],
+               "responses": [
+                    "Pria sejati punya sikap rendah hati dan ramah. Ia akan menghormati semua orang di sekitarnya, kecuali perilaku mereka kasar padanya."
+               ],
+               "context": []
+          },
+          {
+               "tag": "percaya_diri",
+               "patterns": [
+                    "5. Percaya diri",
+                    "Percaya diri"
+               ],
+               "responses": [
+                    "Pria sejati memiliki aura yang kuat saat berjalan di hadapan siapa pun. Ia sangat menghargai dirinya dan tidak ingin tampil lemah di hadapan orang lain."
+               ],
+               "context": []
+          },
+          {
+               "tag": "tidak_licik",
+               "patterns": [
+                    "6. Tidak licik",
+                    "Tidak licik"
+               ],
+               "responses": [
+                    "Pria sejati memiliki sikap lugas dan jujur. Ia pantang bertindak seperti pengecut yang hanya bisa berbuat licik pada lawannya. Bahkan, ia tidak suka mengarang cerita untuk menutupi ketidakmampuannya."
+               ],
+               "context": []
+          },
+          {
+               "tag": "prioritas",
+               "patterns": [
+                    "7. Tahu prioritas",
+                    "Tahu prioritas"
+               ],
+               "responses": [
+                    "Pria sejati tahu apa yang menjadi prioritasnya dalam hidup. Ia selalu memikirkan keluarganya sebelum mengumbar kesenangan duniawi."
+               ],
+               "context": []
+          },
+          {
+               "tag": "akui_kesalahan",
+               "patterns": [
+                    "8. Berani akui kesalahan",
+                    " Berani akui kesalahan"
+               ],
+               "responses": [
+                    "Bersedia mengakui kesalahan dan berjanji tidak mengulanginya. Pria sejati tidak menyalahkan orang lain atas kesalahannya sendiri. Ia sangat mengerti bahwa mengakui kesalahan tidak akan membuatnya terlihat lemah. Malah sebaliknya. Itu akan membuatnya terlihat tegas di mata orang lain."
+               ],
+               "context": []
+          },
+          {
+               "tag": "motivasi_pria_sejati",
+               "patterns": [
+                    "motivasi pria sejati",
+                    "kata-kata pria sejati"
+               ],
+               "responses": [
+                    "Semua butuh proses dalam bertransformasi. Namun, alangkah baiknya jika proses itu dimulai dari sekarang. Siapa pun bisa menjadi pria sejati, jika mau berusaha lebih keras."
+               ],
+               "context": []
+          },
+          {
+               "tag": "mendekati_wanita",
+               "patterns": [
+                    "bagaimana sih cara mendekati wanita",
+                    "trik jitu mendekati wanita",
+                    "cara mendekati wanita yang tepat",
+                    "bagaimana agar wanita tidak ilfile"
+               ],
+               "responses": [
+                    "1. Maksimalkan Penampilan 2. Pastikan Lo Selalu Wangi 3. Berikan Perhatian Lebih 4. Kirim Kode ke Gebetan 5. Cara Mendekati Wanita dengan Jadi Pendengar yang Baik 6. Pilih Topik Pembicaraan Ringan 7. Bersikap Sopan 8. Kurangi Rasa Nggak Pede"
+               ],
+               "context": []
+          },
+          {
+               "tag": "wanita_elegan",
+               "patterns": [
+                    "bagaimana sih cara menjadi wanita elegan",
+                    "trik menjadi wanita elegan"
+               ],
+               "responses": [
+                    "trik menjadi wanita elegan adalah 1. Jaga sikap 2. perhatikan ucapan"
+               ],
+               "context": [
+                    "jaga_sikap"
+               ]
+          },
+          {
+               "tag": "jaga_sikap",
+               "patterns": [
+                    "1. Jaga sikap",
+                    "jaga sikap"
+               ],
+               "responses": [
+                    "Seorang wanita yang dihormati orang lain adalah wanita yang punya attitude yang baik serta tahu cara bersikap yang benar. Ia juga tidak akan membuat orang lain merasa direndahkan, sehingga orang lain akan senang bergaul dengannya. Wanita yang bersikap dengan baik akan disegani orang lain karena mampu mengendalikan sikapnya."
+               ],
+               "context": []
+          },
+          {
+               "tag": "blood_pressure_search",
+               "patterns": [
+                    "Saya ingin mencari riwayat hasil tekanan darah",
+                    "Tekanan darah untuk pasien",
+                    "Muat hasil tekanan darah pasien",
+                    "Tampilkan hasil tekanan darah untuk pasien",
+                    "Temukan hasil tekanan darah dengan ID"
+               ],
+               "responses": [
+                    "Tolong berikan ID Pasien",
+                    "ID Pasien?"
+               ],
+               "context": [
+                    "search_blood_pressure_by_patient_id"
+               ]
+          },
+          {
+               "tag": "search_blood_pressure_by_patient_id",
+               "patterns": [],
+               "responses": [
+                    "Memuat Hasil Tekanan Darah untuk Pasien"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "pharmacy_search",
+               "patterns": [
+                    "Carikan aku apotek",
+                    "Temukan apotek",
+                    "Daftar apotek terdekat",
+                    "Cari apotek",
+                    "Cari apotek"
+               ],
+               "responses": [
+                    "Tolong berikan nama apotek"
+               ],
+               "context": [
+                    "search_pharmacy_by_name"
+               ]
+          },
+          {
+               "tag": "search_pharmacy_by_name",
+               "patterns": [],
+               "responses": [
+                    "Memuat detail apotek"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "hospital_search",
+               "patterns": [
+                    "Cari rumah sakit",
+                    "Mencari Rumah Sakit untuk Memindahkan Pasien",
+                    "Saya ingin mencari data rumah sakit",
+                    "Pencarian rumah sakit untuk pasien",
+                    "Mencari detail rumah sakit"
+               ],
+               "responses": [
+                    "Harap berikan nama atau lokasi rumah sakit"
+               ],
+               "context": [
+                    "search_hospital_by_params"
+               ]
+          },
+          {
+               "tag": "search_hospital_by_params",
+               "patterns": [],
+               "responses": [
+                    "Tolong berikan jenis rumah sakit"
+               ],
+               "context": [
+                    "search_hospital_by_type"
+               ]
+          },
+          {
+               "tag": "mencari_pasangan_janda",
+               "patterns": [
+                    "Gimana agar saya dapat pasangan janda muda",
+                    "Gimana cara dapat janda",
+                    "Saya pingin dapat janda",
+                    "Pingin janda nih"
+               ],
+               "responses": [
+                    "Kamu punya selera yang unik juga yaa kawan. Ada beberapa tips nih \n1. Bersikap Lembut\n2. Bersikap Mendukung\n3. Kamu Harus Percaya Diri\n4. Bersyukur\n5.Pengertian\n6. Penasaran"
+               ],
+               "context": [
+                    "bersikap_lembut",
+                    "bersikap_mendukung",
+                    "kamu_harus_percaya_diri",
+                    "bersyukur",
+                    "pengertian",
+                    "penasaran"
+               ]
+          },
+          {
+               "tag": "bersikap_lembut",
+               "patterns": [
+                    "Maksdunya bersikap lembut",
+                    "Bersikap lembut tuh gimana",
+                    "Bersikap lembut"
+               ],
+               "responses": [
+                    "Ya kayak kamu harus selalu sabar jika sang pujaan mu itu terlalu emosional karena kamu lama balas chat. Kamu harus sabar karena mungkin ini efek dari masa lalunya yang pernah dibegituin sama suaminya dulu. Keep Strong my Brother ;)"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "bersikap_mendukung",
+               "patterns": [
+                    "Bersikap mendukung gimana maksudnya",
+                    "Maksudnya bersikap mendukung?",
+                    "Bersikap mendukung?"
+               ],
+               "responses": [
+                    "Maksudnya itu, kamu harus senantiasa mendukung dia dari keterpurukan. Luka kehilangan tentu saja tidak sembuh dalam semalam. Kesedihan yang dibawa pun mungkin tidak akan pernah hilang selamanya. Kamu harus peka menghiburnya saat doi dirundung pilu akan masa lalunya yang mungkin cukup kelam baginya. Gitu bro"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "kamu_harus_percaya_diri",
+               "patterns": [
+                    "Aku harus percaya diri?",
+                    "Maksudnya percaya diri itu gimana?",
+                    "Percaya diri?"
+               ],
+               "responses": [
+                    "Maksudnya itu, kamu harus senantiasa mendukung dia dari keterpurukan. Luka kehilangan tentu saja tidak sembuh dalam semalam. Kesedihan yang dibawa pun mungkin tidak akan pernah hilang selamanya. Kamu harus peka menghiburnya saat doi dirundung pilu akan masa lalunya yang mungkin cukup kelam baginya. Gitu bro"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "bersyukur",
+               "patterns": [
+                    "Bersyukur gimana ya",
+                    "Maksudnya bersyukur",
+                    "Bersyukur?"
+               ],
+               "responses": [
+                    "Iya bersyukur, kamu harus mensyukuri nikmat Tuhan dengan menerima segala kekurangan sang pujaanmu, kamu juga tidak boleh menilai sebelah mata sang janda idamanmu karena dia pasti dapat menjadikanmu lelaki yang kuat dan bertanggung jawab"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "pengertian",
+               "patterns": [
+                    "Aku harus pengertian gimana",
+                    "Maksudnya pengertian?",
+                    "Pengertian?"
+               ],
+               "responses": [
+                    "Yups, kamu harus selalu pengertian kepada sang janda incaranmu karena kehilangan yang mendalam bisa mengubah hidup dan kesedihan abadi bagi sang janda. Jika kamu belum pernah mengalami kehilangan yang mendalam, cobalah perluas pemahaman Anda tentang rasa kesedihan. Ini bisa membawa keajaiban bagi asmara kamu dengan seorang janda. Gitu ya bro"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "penasaran",
+               "patterns": [
+                    "Aku harus penasaran pada apa",
+                    "Maksudnya penasarana apa",
+                    "Penasaran gimana maksudnya",
+                    "Penasaran?"
+               ],
+               "responses": [
+                    "Maksudnya gini loh, Ajuin beberapa pertanyaan tentang orang yang dicintai dan dengarkan kisahnya secara seksama. Doi mungkin akan merasa sangat lega saat mengetahui orang baru dalam hidupnya baik-baik saja dengan orang yang mati dalam hidupnya. Jadi tanyakan, dengarkan, dan kenali orangnya. Maksudnya gitu bro"
+               ],
+               "context": [
+                    ""
+               ]
+          },
+          {
+               "tag": "tantangan_janda",
+               "patterns": [
+                    "Jadi janda tantangannya apa aja sih",
+                    "Apa aja tantangan jadi janda",
+                    "Janda tantangannya apa aja",
+                    "Tantangan jadi janda"
+               ],
+               "responses": [
+                    "Hmmm....pertanyaan menarik. Jadi gini bro, ada beberapa tantangan jadi janda misalnya kaya minta bantuan pria aja dianggap modus. Ada juga lagi bro, pandangan masyarakat itu menganggap kalo janda itu butuh belaian, belum lagi dibenci istri orang walau nggak ngapa-ngapain suami mereka. Beratkan bro, makanya hargai mereka selayaknya loe hargai ibu loe..."
+               ],
+               "context": [
+                    "tantangan"
+               ]
+          },
+          {
+               "tag": "restu_kawin_sama_janda",
+               "patterns": [   
+                    "Gimana cara aku supaya dapat restu orang tua nikah sama janda",
+                    "Dapat restu orang tua untuk nikahi janda",
+                    "Cara buat dapat restu orang tua nikahi janda",
+                    "Restu orang tua izinin nikahi janda itu gimana"
+               ],
+               "responses": [
+                    "Widih udah siap aja nih romannya. Jadi menurukku gini bro ada yang harus kamu lakukan kaya 1. Dekati orang tuamu, 2. Bujuk secara halus, 3. Tunjukin bahwa kamu emang udah siap, 4. Kamu menerima dia apa adanya, 5. Pujaanmu orang yang baik"
+               ],
+               "context": [
+                    "dekati_orang_tua",
+                    "bujuk_secara_halus",
+                    "tunjukin_siap",
+                    "menerima_dia",
+                    "dia_orang_baik"
+               ]
+          },
+          {
+               "tag": "dekati_orang_tua",
+               "patterns": [   
+                    "Maksudnya dekati orang tua?",
+                    "Dekati gimana maksudnya?",
+                    "Dekati orang tua?",
+                    "Aku harus dekati orang tuaku buat apa?"
+               ],
+               "responses": [
+                    "Ya dekati orang tuamu itu kamu omongin masalah ini secara intensif maksudnya. Kamu utarakan bahwa kamu itu memang tulus cinta sama doi bukan atas nafsu semata atau hal lain. Ingat bro, ngomongnya harus secara halus, jangan ada unsur paksaan karena ridho orang tuamu-lah yang bisa membuat rumah tangga mu aman dan tentram."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "bujuk_secara_halus",
+               "patterns": [   
+                    "Maksudnya dekati orang tua?",
+                    "Dekati gimana maksudnya?",
+                    "Dekati orang tua?",
+                    "Aku harus dekati orang tuaku buat apa?"
+               ],
+               "responses": [
+                    "Orang tuamu itu dibujuk secara perlahan tapi pasti dari waktu ke waktu. Kamu bujuk secara halus dengan kata-kata yang sopan supaya orang tuamu terketuk hatinya menerima hubungan kamu."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "tunjukin_siap",
+               "patterns": [   
+                    "Apanya yang perlu ditunjukin?",
+                    "Maksudnya tunjukin?",
+                    "Apa maksud dari tunjukin siap?"
+               ],
+               "responses": [
+                    "Kamu tunjukin tuh ke orang tuamu bahwasannya kamu tuh sudah siap berumah tangga. Kamu bisa bertanggung jawab atas apa yang sudah kamu putuskan."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "menerima_dia",
+               "patterns": [   
+                    "Kalo menerima itu maksudnya?",
+                    "Menerima gimana?",
+                    "Menerima dia?"
+               ],
+               "responses": [
+                    "Ya kamu jelasin bahwa kamu menerima dia apa adanya tanpa ada unsur lain. Jelasin juga bahwa kamu tidak masalah atas statusnya sebagai janda karena memang kamu mencintai dia apa adanya bukan karena rupa, harta, ataupun saldo Dana. Gitu ya bro"
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "dia_orang_baik",
+               "patterns": [   
+                    "Kalo dia orang baik itu gimana?",
+                    "Maksudnya dia orang baik?"
+               ],
+               "responses": [
+                    "Kamu jelasin bahwa dia orang yang baik dan dari keluarga yang baik pula. Dia menerima segala kekurangan kamu dan tulus mencintai kamu tanda memandang aspek lain dari diri kamu. Itu ya bro :)"
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "janda_berkelas",
+               "patterns": [   
+                    "Gimana sih caranya jadi janda yang elegan dan berkelas",
+                    "Cara menjadi janda yang elegan dan berkelas"
+               ],
+               "responses": [
+                    "Naaah, ada beberapa aspek yang perlu diperhatikan nih sob kalo mau jadi janda berkelas dan elegan, seperti 1. Kalau menjalin hubungan tidak perlu publikasi, 2. Jika memungkinkan jangan terlalu sering pergi menginap, 3.  Hindari menerima tamu pria terlalu sering, 4. Perhatikan penampilan, 5. Jangan respon candaan pria yang sifatnya mesum, 6. Fokus dengan kegiatan yang positif, 7. Miliki pekerjaan dan jadilah mandiri, 8. Jangan langsung menerima pria masuk dalam kehidupan pribadi"
+               ],
+               "context": [
+                   "tidak_publikasi",
+                   "jangan_sering_menginap",
+                   "hindari_tamu_pria",
+                   "perhatikan_penampilan",
+                   "jangan_respon",
+                   "fokus",
+                   "mandiri",
+                   "jangan_langsung_menerima"
+               ]
+          },
+          {
+               "tag": "tidak_publikasi",
+               "patterns": [   
+                    "Maksudnya tidap perlu publikasi?",
+                    "Apa maksud tidak perlu publikasi?"
+               ],
+               "responses": [
+                    "Menjalin hubungan dengan pria untuk mengenal lebih jauh sebelum memutuskan akan serius atau tidak, seharusnya dilakukan secara diam-diam. Jangan sampai para tetangga tahu dengan semua itu."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "jangan_sering_menginap",
+               "patterns": [   
+                    "Maksudnya jangan sring menginap?",
+                    "Kenapa jangan sering menginap?"
+               ],
+               "responses": [
+                    "Pergi menginap meskipun di rumah teman wanita, jika tidak benar-benar penting sebaiknya dihindari. Ini untuk menghindari pikiran orang lain, yang menganggap pergi menginap bersama laki-laki."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "hindari_tamu_pria",
+               "patterns": [   
+                    "Kenapa tidak boleh menerima tamu pria?",
+                    "Apa masalahnya menerima tamu pria?"
+               ],
+               "responses": [
+                    "Menerima tamu pria tanpa orang tahu kepentingannya juga bisa menciptakan dugaan buruk para tetangga. Apalagi malam dan di rumah tidak ada orang lain."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "perhatikan_penampilan",
+               "patterns": [   
+                    "Kenapa harus memperhatikan penampilan?",
+                    "Ada apa dengan penampilan?"
+               ],
+               "responses": [
+                    "Tentunya penampilan tertutup atau penampilan yang terlihat berkelas. Hindari berpakaian minim terutama ketika keluar rumah."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "jangan_respon",
+               "patterns": [   
+                    "Kenapa tidak boleh merespon candaan pria?",
+                    "Apa penyebab tidak boleh merespon candaan pria?"
+               ],
+               "responses": [
+                    "Kadang ada pria yang sengaja memancing candaan dengan topik mesum. Mereka cuma iseng dan kalau direspon bisa besar kepala. Mendingan diam saja dan tunjukkan bahwa kamu tidak suka dengan gaya bercanda seperti itu."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "fokus",
+               "patterns": [   
+                    "Fokus dalam hal apa?",
+                    "Kenapa harus fokus dengan kegiatan positif?"
+               ],
+               "responses": [
+                    "Untuk mengisi waktu luang, fokuskan diri pada kegiatan positif. Seperti kegiatan keagamaan, bakti sosial, dan sebagainya. Hindari aktivitas yang mengarah kepada kebebasan pergaulan. Ini akan memberikan citra negatif apalagi statusnya sudah janda."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "mandiri",
+               "patterns": [   
+                    "Kenapa harus mandiri?",
+                    "Kenapa harus memiliki pekerjaan?"
+               ],
+               "responses": [
+                    "Pekerjaan tetap yang akan membuat diri menjadi lebih mandiri. Utamakan pekerjaan yang memang bisa menaikkan status sosial. Dengan ini, orang lain akan memiliki penilaian yang berbeda. Apalagi jika bisa menjadi tulang punggung untuk keluarga dan anak jika sudah punya."
+               ],
+               "context": [
+                   ""
+               ]
+          },
+          {
+               "tag": "jangan_langsung_menerima",
+               "patterns": [   
+                    "Kenapa tidak boleh langsung menerima pria masuk ke kehidupan?",
+                    "Tidak boleh menerima pria ke kehidupan?"
+               ],
+               "responses": [
+                    "Jika pria cuma ingin iseng atau coba-coba, biarkan dia berusaha lebih keras. Itu tidak akan jadi masalah, karena kalau saja memang serius pasti akan mencari cara untuk lebih dekat."
+               ],
+               "context": [
+                   ""
+               ]
+          }
+          
+     ]
+}
